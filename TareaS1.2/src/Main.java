@@ -2,7 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("//// TareaS1.2 semana 1 //// ");
+
+        System.out.println("//// TareaS1.2 semana  1 //// ");
         System.out.println("Nombre: Lubswer Alan Catagña Caiza");
         System.out.println("Paralelo: GR2");
 
