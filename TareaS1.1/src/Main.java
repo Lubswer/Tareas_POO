@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args){
         
-        System.out.println("//// Tarea semana 1 //// ");
+        System.out.println("//// TareaS1.1 semana 1 //// ");
         System.out.println("Nombre: Lubswer Alan Catagña Caiza");
         System.out.println("Paralelo: GR2");
         
