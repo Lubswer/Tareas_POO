@@ -1,12 +1,14 @@
 package main;
 
 import main.cliente.Cliente;
-
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Fabricas {
 
     Scanner teclado = new Scanner(System.in);
+
+
     public static Cliente crearCliente(Scanner teclado){
         String nombre = null;
         String telefono = null;
@@ -19,8 +21,9 @@ public class Fabricas {
             System.out.printf("Error: " + e.getMessage());
         }
         try{
-            System.out.println("Ingresar nombre: ");
+            System.out.println("Ingresar cedula: ");
             cedula = teclado.nextLine();
+
         }catch (IllegalArgumentException e){
             System.out.printf("Error: " + e.getMessage());
         }
@@ -36,12 +39,8 @@ public class Fabricas {
         }catch (IllegalArgumentException e){
             System.out.printf("Error: " + e.getMessage());
         }
-        if ((nombre == null || nombre.isBlank()) || (cedula == null || cedula.isBlank()) || (telefono == null || telefono.isBlank()) || (contrasenia == null || contrasenia.isBlank())) {
-            // Unir con catch de mostrar exepcioon tipo null;
-            return null;
-        }else{
-            return new Cliente( nombre, cedula, telefono, contrasenia);
-        }
+        return new Cliente( nombre, cedula, telefono, contrasenia);
+
     }
 
 }
